@@ -117,5 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+export EDITOR=vim
 
 

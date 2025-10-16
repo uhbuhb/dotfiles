@@ -1,0 +1,21 @@
+[user]
+  email = habermanori@gmail.com
+  name = oriHab
+[color]
+	ui = auto
+[rebase]
+  autostash = true
+  autosquash = true
+  updateRefs = true
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
+[rerere]
+	enabled = true
+[pull]
+	rebase = true
+[alias]
+	addnw = diff -U0 -w --no-color --src-prefix=a/ --dst-prefix=b/ \"$@\" | git apply --cached --ignore-whitespace --unidiff-zero -
+[credential]
+	helper = osxkeychain
